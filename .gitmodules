@@ -1,0 +1,8 @@
+[submodule "ProbeParticleModel-complix_tip"]
+	path = ProbeParticleModel-complix_tip
+	url = https://github.com/yashasvi-ranawat/ppafm.git
+	branch = complex_tip
+[submodule "ProbeParticleModel-OpenCL"]
+	path = ProbeParticleModel-OpenCL
+	url = https://github.com/yashasvi-ranawat/ppafm.git
+	branch = OpenCL

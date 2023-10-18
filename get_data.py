@@ -28,7 +28,8 @@ def main(atoms_list):
                 for j in os.listdir():
                     if j.startswith('Amp'):
                         with Cd(j):
-                            data, _ = read_xsf('df.xsf', read_data=True)
+                            with open("df.xsf", "r") as fio:
+                                data, *_ = read_xsf(fio, read_data=True)
                         break
             break
     atoms = atoms_list[0]
