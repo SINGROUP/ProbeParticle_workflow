@@ -13,8 +13,7 @@ Install
 Clone the required git repositories::
 
 ```bash
-git clone https://github.com/SINGROUP/ProbeParticle_workflow.git
-git submodule update --init --recursive
+git clone --recurse-submodules https://github.com/SINGROUP/ProbeParticle_workflow.git
 ```
 
 Install python dependencies, using [pipenv](https://pipenv.pypa.io/en/latest/)::
@@ -34,6 +33,8 @@ Usage
 
 The workflow requires POSCAR, LOCAPOT and CHGCAR files from VASP simulation of the system. These files should be added to the `data` folder with the same prefix, as shown by "example" files.
 The `workflow.ipynb` has the cells to add the workflow to an [ASE database](https://wiki.fysik.dtu.dk/ase/ase/db/db.html). 
+
+> **_NOTE:_**  Add a vacuum of atleast 20Å over the system for better visualisation.
 
 [Runner](https://runner.readthedocs.io) is used to run the workflow.
 There are two ways to run the workflow once added to the database::
