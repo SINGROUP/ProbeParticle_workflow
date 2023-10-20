@@ -31,7 +31,7 @@ pipenv shell
 Usage
 -----
 
-The workflow requires POSCAR, LOCAPOT and CHGCAR files from VASP simulation of the system. These files should be added to the `data` folder with the same prefix, as shown by "example" files.
+The workflow requires POSCAR, LOCPOT and CHGCAR files from VASP simulation of the system. These files should be added to the `data` folder with the same prefix, as shown by "example" files.
 The `workflow.ipynb` has the cells to add the workflow to an [ASE database](https://wiki.fysik.dtu.dk/ase/ase/db/db.html). 
 
 > **_NOTE:_**  Add a vacuum of atleast 20Å over the system for better visualisation.
